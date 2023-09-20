@@ -59,8 +59,8 @@ const removeone = function (id) {
     displaytasks();
 
 }
-buton.addEventListener("click", function () {
 
+const add_2 = function () {
     if (text.value == "") {
         alert("Lütfen görev giriniz!")
 
@@ -71,6 +71,21 @@ buton.addEventListener("click", function () {
         text.value = '';
     }
 
+}
+
+buton.addEventListener("click", function () {
+
+    add_2();
+
+
+})
+
+document.addEventListener("keypress", function (event) {
+    if (event.keyCode === 13) {
+
+
+        add_2();
+    }
 
 })
 
